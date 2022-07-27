@@ -12,8 +12,6 @@ body{
 }
 .wrapper{
     max-width: 405px;
-    max-height: 90%;
-    overflow-y: hidden;
     margin: 135px auto;
     background-color: #fff;
     border-radius: 7px;
