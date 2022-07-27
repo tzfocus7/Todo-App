@@ -12,6 +12,8 @@ body{
 }
 .wrapper{
     max-width: 405px;
+    max-height: 90%;
+    overflow-y: hidden;
     margin: 135px auto;
     background-color: #fff;
     border-radius: 7px;
@@ -132,4 +134,45 @@ body{
 }
 .task-menu li i{
     padding: 0 8px 0 0;
+}
+
+@media (max-width: 450px){
+    .wrapper{
+        margin: 100px auto;
+        width: 90%;
+    }
+}
+
+@media (max-width: 390px){
+    .controls{
+        flex-direction: column;
+        gap: 10px;
+        margin-top: -15px;
+    }
+    .task-box .task{
+        font-size: 15px;
+    }
+    .task-input .icon{
+        position: absolute;
+        top: 50%;
+        transform: translate(15px, -70%);
+        color: #bfbfbf;
+        font-size: 18px;
+    }
+    .task-input input{
+        height: 80%;
+        font-size: 15px;
+        padding: 0 20px 0 50px;
+    }
+    .filters{
+        display: flex;
+        justify-content: space-between;
+    }
+    .filters span{
+        font-size: 15px;
+    }
+    button, .filters{
+        width: 100%;
+    }
+
 }
